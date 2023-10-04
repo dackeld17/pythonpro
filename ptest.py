@@ -1,0 +1,5 @@
+print('Name : Jin Geon Ho')
+print('Age : 23')
+print('Major : Computer Engineering')
+print('hobby : study')
+print('Favorite food : bread')
