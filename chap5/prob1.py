@@ -33,9 +33,7 @@ print ("You add the contents of the chest to your inventory.")
 
 inventory += chest
 print("Your inventory is now :")
-print("(",end = '')
 print(inventory)
-print(")",end ='')
 
 
 input ("\nPress Enter key to exit.")
