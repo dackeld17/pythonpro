@@ -34,8 +34,7 @@ print ("You add the contents of the chest to your inventory.")
 inventory += chest
 print("Your inventory is now :")
 print("(",end = '')
-for item in inventory:
-    print("'" ,item ,end = "' , ")
+print(inventory)
 print(")",end ='')
 
 
