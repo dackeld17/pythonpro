@@ -1,37 +1,40 @@
 try:
-    num = float(raw_input("Enter a number: "))
-except:
+    num = float (input ("Enter a number: "))
+except ValueError:
     print("Something went wrong!")
 
-try :
-    num = float(raw_input("\nEnter a number: "))
-except:
-    print("That was not a number!")
+try:
+    num = float(input("\nEnter a number: "))
+except ValueError:
+    print("That was not a number!\n")
 
 for value in (None, "Hi!"):
     try:
-        print("Attempting to convert", value, "->",)
+        print("Attempting to convert", value, "->", end=" ")
         print(float(value))
-    except(TypeError,ValueError):
-        print("something went wrong!")
+    except (TypeError, ValueError):
+        print("Something went wrong!")
+
+print()
 
 for value in (None, "Hi!"):
     try:
-        print("Attempting to convert", value,"->",)
+        print("Attempting to convert", value, "->", end=" ")
         print(float(value))
-    except(TypeError):
+    except TypeError:
         print("Can only convert string or number!")
-    except(ValueError):
+    except ValueError:
         print("Can only convert a string of digits!")
 
 try:
-    num = float(raw_input("\nEnter a number: "))
+    num = float(input("\nEnter a number: "))
 except ValueError as e:
-    print("Not a number! or as Python would say\n",e)
+    print("Not a number! or as Python would say\n", e)
 
 try:
-    num = float(raw_input("\nEnter a number: "))
-except(ValueError):
+    num = float(input("\nEnter a number: "))
+except ValueError:
     print("That was not a number!")
 else:
     print("You entered the number", num)
+
