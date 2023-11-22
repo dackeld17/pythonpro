@@ -1,0 +1,11 @@
+import pickle
+
+questions_data = [
+    ("What is the capital of Korea ?", ["Daegu", "Seoul", "Busan", "Ulsan"], 2),
+    ("What is the largest organ in the human body?", ["Heart", "Brain", "Liver", "Lungs"], 3),
+    ("Which animal can only live in the ocean? ", ["Lion", "Monkey", "Cat", "Whale"], 4)
+]
+
+
+with open("trivia_data.pkl", "wb") as file:
+    pickle.dump(questions_data, file)
