@@ -15,14 +15,12 @@ def ask_question(question, options):
     return int(user_answer)
 
 def run_game(questions):
-    score = 0
     random_question = random.choice(questions)
     question, options, correct_answer = random_question
    
     user_answer = ask_question(question, options)
     if user_answer == correct_answer:
         print("\nCorrect!\n")
-        score += 1
     else:
         print(f"\nWrong! The correct answer was {correct_answer}\n")
 
