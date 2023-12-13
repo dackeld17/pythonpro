@@ -3,6 +3,9 @@ import random
 suits = ['h', 'd', 'c', 's']
 ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
 
+class Chip(object):
+    type = 'dollar'
+    amount = 1
 class Card(object):
     RANKS = ['A','2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
     SUITS = ['c', 'd', 'h', 's']
@@ -78,6 +81,11 @@ def BJ_Game():
         Dealer(player, player_hands[player])
    
     Positionable_Card("dealer", dealer_hand, hide_first_card=True)
+   
+    for player in players:
+        bet = input(f"{player}, How much will you bat($): ?")
+        
+   
     
     print()
     for player in players:
@@ -85,4 +93,3 @@ def BJ_Game():
    
 if __name__ == "__main__":    
  BJ_Game()
-
